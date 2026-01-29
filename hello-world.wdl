@@ -28,9 +28,9 @@ task SayHello {
         String message = read_string(stdout())
     }
 
-    runtime {
-        cpu: 1
-        memory: "1 GB"
-        docker: "992382658335.dkr.ecr.us-west-2.amazonaws.com/dockerhub/ubuntu:20.04"
-    }
+  runtime {
+    memory: "1 GB"
+    cpu: 1
+
+  }
 }
